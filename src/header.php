@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-<meta charset="UTF-8">
-<title>旅行日記</title>
+
+    <meta charset="UTF-8">
+    <title>旅行日記</title>
 </head>
 <body>
 <div class="header">
