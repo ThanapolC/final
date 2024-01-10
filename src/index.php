@@ -5,7 +5,13 @@
         if(isset($_POST['add'])){
             $sql2=$pdo->prepare('insert into Journey value(null,?,?,?,?)');
             $sql2->execute([$_POST['departure_input'],$_POST['return_input'],$_POST['destination_input'],$_POST['category_input'],]);
-        } 
+        }elseif(isset($_POST['edit'])){
+            /*$sql3=$pdo->prepare('insert into Journey value(null,?,?,?,?)');
+            $sql3->execute([$_POST['departure_input'],$_POST['return_input'],$_POST['destination_input'],$_POST['category_input'],]);*/
+        }elseif(isset($_POST['delete'])){
+            $sql4=$pdo->prepare('delete from Journey where journey_id=?');
+            $sql4->execute([$_POST['id_input']]);
+        }    
     ?>
     <table>
         <thead>

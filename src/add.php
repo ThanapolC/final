@@ -1,5 +1,6 @@
 <?php require 'db-connect.php'; ?>
 <?php require 'header.php'; ?>
+<?php $pdo=new PDO($connect, USER, PASS); ?>
     <form action="index.php" method="post">
         <table>
             <tr>
@@ -18,8 +19,6 @@
                 <th>カテゴリー</th>
                 <td>
                     <?php
-                        $pdo=new PDO($connect,USER,PASS);
-
                         $sql=$pdo->query('select * from Category');
                         echo '<select name="category_input" required>';
                         foreach($sql as $row){
