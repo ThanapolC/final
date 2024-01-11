@@ -4,10 +4,10 @@
     <?php
         if(isset($_POST['add'])){
             $sql2=$pdo->prepare('insert into Journey value(null,?,?,?,?)');
-            $sql2->execute([$_POST['departure_input'],$_POST['return_input'],$_POST['destination_input'],$_POST['category_input'],]);
+            $sql2->execute([$_POST['departure_input'],$_POST['return_input'],$_POST['destination_input'],$_POST['category_input']]);
         }elseif(isset($_POST['edit'])){
-            /*$sql3=$pdo->prepare('insert into Journey value(null,?,?,?,?)');
-            $sql3->execute([$_POST['departure_input'],$_POST['return_input'],$_POST['destination_input'],$_POST['category_input'],]);*/
+            $sql3=$pdo->prepare('update Journey set departure_date=?, return_date=?, destination=?, category_id=? where journey_id=?');
+            $sql3->execute([$_POST['departure_input'],$_POST['return_input'],$_POST['destination_input'],$_POST['category_input'],$_POST['id_confirm']]);
         }elseif(isset($_POST['delete'])){
             $sql4=$pdo->prepare('delete from Journey where journey_id=?');
             $sql4->execute([$_POST['id_input']]);
