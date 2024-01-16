@@ -6,4 +6,4 @@
 
 システム名　：旅行日記システム
 
-URL　　　　 ：
+URL　　　　 ：https://aso2201492.stripper.jp/final/index.php
