@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
 </head>
 <body>
-<div class="header has-background-info-light pb-4">
+<div class="header has-background-info-light pb-4 mb-5">
     <h1 class="title is-1 has-text-centered pt-4 mb-4 has-text-grey-dark">旅行日記</h1>
     <section class="menutab has-text-centered">
         <a href="index.php" class="button is-info is-small is-hovered mx-1">一覧</a>
@@ -17,5 +17,5 @@
         <a href="edit.php" class="button is-info is-small is-hovered">更新</a>
         <a href="delete.php" class="button is-info is-small is-hovered mx-1">削除</a>
     </section>
-</div> 
-    <hr>  
+</div>
+    
